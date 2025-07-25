@@ -12,6 +12,12 @@ pipeline {
                 bat 'npm install'
             }
         }
+        stage('Subir servidor') {
+              steps {
+                // Iniciar o servidor em background
+                bat 'start /b npm start'
+          }
+        }
         stage('Executar testes') {
             steps {
                 bat '''set NO_COLOR=1
