@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Setup') {
             steps {
-                git branch: 'main', url: 'https://github.com/Rafael140495/teste-ebac-ui.git'
+                git branch: 'main', url: 'https://github.com/Rafael140495/teste-api-ebac'
             }
         }
         stage('Instalar dependências') {
